@@ -1,0 +1,125 @@
+#hero {
+  width: 100%;
+  height: calc(100vh - 40px);
+  background: url(../img/hero-bg.png) center bottom no-repeat;
+  background-size: 100%;
+  position: relative;
+  margin-top: 80px;
+}
+
+@media (min-width: 1025px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 1280px){ 
+   .hero-container {
+    position: absolute;
+    bottom: 100px !important;
+    top: 120px !important;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+   #hero img {
+    max-width: 37% !important;
+    margin-bottom: 30px;
+  }
+}
+#hero .hero-container {
+  position: relative;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 56px;
+  font-family: "Philosopher", sans-serif;
+  color: #4154f1;
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+#hero h2 {
+  color: #525252;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  
+}
+
+#hero img {
+  max-width: 45%;
+  margin-bottom: 30px;
+}
+
+#hero .btn-get-started {
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 11px 36px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-bottom: 10px;
+  background:  #4154f1;
+  color: white;
+  text-decoration: none;
+  opacity: 90%;
+}
+
+#hero .btn-get-started:hover {
+  background: #4154f1;
+  color: #fff;
+}
+
+#hero .btns a {
+  color: #555;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 4px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+@media (max-width: 575px) {
+  #hero .btns a {
+    margin: 4px 8px;
+  }
+}
+
+#hero .btns a:hover {
+  color: #4154f1;
+}
+
